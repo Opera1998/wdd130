@@ -44,7 +44,7 @@ h3 {
 }
 
 footer {
-	position: fixed;
+	/* position: fixed; */
 	bottom: 0;
 	margin: 1rem;
 	border-top: 1px solid #000;
