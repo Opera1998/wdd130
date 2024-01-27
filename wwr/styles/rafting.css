@@ -22,10 +22,15 @@ h1, article{
     font-family: var(--heading-font);
     color: var(--primary-color);
     position: absolute;
+    font-size: 2rem;
 }
 header {
-    padding: 20px;
-    background-color: var(--accent-color1);
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
 }
 p {
     padding: 25px;
@@ -34,6 +39,7 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    text-align: right;
 }
 nav a {
     display: block;
@@ -58,4 +64,59 @@ nav a:hover {
 }
 article img {
     float: right;
+}
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+.navigation {
+	display: flex;
+	list-style: none;
+}
+.navigation li {
+	flex: 1 1 100%;
+}
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+section {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+  
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+  
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+footer img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+    grid-column: auto;
 }
