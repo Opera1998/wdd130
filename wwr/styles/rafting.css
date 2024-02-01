@@ -15,7 +15,7 @@
 }
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 9600px;
     padding: 20px;
 }
 h1, article{
@@ -54,22 +54,6 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.hero div {
-    position: relative;
-}
-article img {
-    float: right;
-}
-.logo img {
-	margin: 0 0.25rem 0 1rem;
-	width: 64px;
-	height: auto;
-}
 .navigation {
 	display: flex;
 	list-style: none;
@@ -83,7 +67,6 @@ article img {
 	padding: 20px;
 	text-decoration: none;
 }
-
 .navigation a:hover {
 	color: tomato;
 	font-weight: 700;
@@ -101,7 +84,6 @@ figure {
     max-width: 220px;
     margin: auto;
 }
-  
 img {
     max-width: 220px;
     max-height: 150px;
