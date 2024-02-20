@@ -135,7 +135,7 @@ nav, h1 {
     text-align: center;
     background-color: #000000;
 }
-article {
+.hero article {
     position: absolute;
     background-color: #FF7E00;
     width: 80%;
@@ -263,6 +263,7 @@ input[type="checkbox"] {
 }
 button {
     justify-self: center;
+    align-self: center;
     width: 150px;
     margin: 1rem;
     background-color: rgb(238, 255, 0);
@@ -272,7 +273,6 @@ button {
     padding: .75rem;
     font-size: 1.2rem;
 }
-  
 button:hover {
     background-color: darkgreen;
 }
@@ -302,26 +302,92 @@ footer {
     float: right;
     position: relative;
 }
-.trips {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .fun {
-    display: block;
+    position: relative;
+    border: 20px thick var(--primary-color);
+}
+.fun img {
+    margin: 0;
+    padding: 0;
+    border: 0;
     width: 100%;
     height: auto;
 }
+.fun >h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+}
+.fun article {
+    position: absolute;
+    justify-self: center;
+    background-color: azure;
+    width: 60%;
+    top: 120px;
+    left: 90px;
+    padding: 5px;
+    color: #000000;
+    border: ridge 5px var(--primary-color);
+}
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--accent-color1);
+    border-top: 10px thick var(--primary-color);
+    border-bottom: 10px double var(--primary-color);
+}
+.trips >h2 {
+    background-color: var(--accent-color1);
+    grid-column: 1/6;
+    grid-row: 1;
+    text-align: center;
+}
+.trips img {
+    width: 100%;
+    height: auto;
+}
+.castle {
+    background: #FFDBB5;
+    color: black;
+    display: flex;
+    gap: 80px;
+    padding: 28px;
+}
+.castle figure {
+    flex: 1 0 0%;
+    margin: 0;
+    text-align: justify;
+    text-transform: uppercase;
+}
+.castle figure img {
+    object-fit: cover;
+    height: 150px;
+    width: auto;
+    border-radius: 1rem;
+  }
 .aqua {
-    width: 960px;
-    height: 960px;
-    display: block;
     position: relative;
 }
 .aqua img {
-    display: block;
-    width: 960px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
     height: auto;
+}
+.aqua article {
+    position: absolute;
+    background-color: #FF7E00;
+    width: 80%;
+    top: 120px;
+    left: 90px;
+    padding: 5px;
+    color: #000000;
+    border: dashed 10px var(--nav-background-color);
 }
 .excitement {
     position: absolute;
@@ -331,13 +397,22 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: dashed 20px var(--primary-color);
 }
-.wild {
-    display: flex;
+.wildlife {
+    display: grid;
+    background-color: var(--accent-color1);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
+    border: outset;
 }
 .neptune {
-    background-color: #ffffff;
+    background-color: black;
+    justify-content: center;
+}
+.Jupiter {
+    background-color: black;
     justify-content: center;
 }
